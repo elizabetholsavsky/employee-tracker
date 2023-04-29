@@ -3,7 +3,7 @@ require('dotenv').config();
 const inquirer = require('inquirer');
 const displayTitleText = require('./lib/titleText.js');
 const tasksPrompt = require('./lib/tasksPrompt.js');
-const { viewDepartments, viewRoles, viewEmployees, addDepartment, addRole, addEmployee, addEmployeeRole } = require('./lib/tasks.js')
+const { viewDepartments, viewRoles, viewEmployees, addDepartment, addRole, addEmployee, addEmployeeRole, exit } = require('./lib/tasks.js')
 
 // connect to db
 const db = mysql.createConnection(
@@ -14,12 +14,12 @@ const db = mysql.createConnection(
         password: process.env.PASSWORD,
         database: 'employee_db'
     },
-    console.log(`Connected to the employee_db database.`)
+    console.log(`Connected to the employee_db database ✔`)
 ); 
 
 // handle errors or start application
 db.connect(function (err) {
-    if (err) throw err;
+    // if (err) throw err;
     init();
 });
 
@@ -59,6 +59,9 @@ function task(response) {
             break;
         case "Update an employee role":
             addEmployeeRole();
+            break;
+        case "Exit":
+            exit();
             break;
     }
 };
