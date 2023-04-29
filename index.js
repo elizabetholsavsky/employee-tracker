@@ -2,7 +2,8 @@ const mysql = require('mysql2');
 require('dotenv').config();
 const inquirer = require('inquirer');
 const displayTitleText = require('./lib/titleText.js');
-const questions = require('./lib/questions.js');
+const tasksPrompt = require('./lib/tasksPrompt.js');
+const { viewDepartments, viewRoles, viewEmployees, addDepartment, addRole, addEmployee, addEmployeeRole } = require('./lib/tasks.js')
 
 // connect to db
 const db = mysql.createConnection(
@@ -18,7 +19,7 @@ const db = mysql.createConnection(
 
 // handle errors or start application
 db.connect(function (err) {
-    // if (err) throw err;
+    if (err) throw err;
     init();
 });
 
@@ -26,7 +27,7 @@ db.connect(function (err) {
 function init() {
     displayTitleText();
     inquirer
-    .prompt(questions)
+    .prompt(tasksPrompt)
     .then((response => {
         task(response);
     }))
@@ -60,8 +61,4 @@ function task(response) {
             addEmployeeRole();
             break;
     }
-}
-
-function viewDepartments() {
-    console.log('HERE!')
-}
+};
