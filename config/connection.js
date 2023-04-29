@@ -1,3 +1,21 @@
+const Sequelize = require('sequelize');
+require('dotenv').config();
+
+const sequelize = new Sequelize(
+  process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PASSWORD,
+  {
+    host: 'localhost',
+    dialect: 'mysql',
+    port: 3306,
+  },
+  console.log(`Connected to the employee_db database.`)
+);
+
+module.exports = sequelize;
+
+/*
 
 _____                       _                                 
 | ____|  _ __ ___    _ __   | |   ___    _   _    ___    ___   
@@ -11,3 +29,6 @@ _____                       _
         | |   | |    | (_| | | (__  |   <  |  __/ | |          
         |_|   |_|     \__,_|  \___| |_|\_\  \___| |_|          
                                                                
+
+*/ 
+
