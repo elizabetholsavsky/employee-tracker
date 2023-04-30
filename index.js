@@ -1,6 +1,6 @@
 const { displayTitleText, displayExitText } = require('./lib/specialText.js');
 const db = require('./config/connection.js');
-const selectTask = require('./lib/queries.js');
+const selectTask = require('./lib/selectTask.js');
 
 // handle errors or start application
 db.connect(function (err) {
