@@ -1,9 +1,8 @@
 const mysql = require('mysql2');
 require('dotenv').config();
 const inquirer = require('inquirer');
-const displayTitleText = require('./lib/titleText.js');
+const { displayTitleText, displayExitText } = require('./lib/specialText.js');
 const tasksPrompt = require('./lib/tasksPrompt.js');
-const { viewDepartments, viewRoles, viewEmployees, addDepartment, addRole, addEmployee, addEmployeeRole, exit } = require('./lib/tasks.js')
 
 // connect to db
 const db = mysql.createConnection(
@@ -29,11 +28,47 @@ function selectPrompt() {
     .prompt(tasksPrompt)
     .then((response => {
         task(response);
-        selectPrompt();
     }))
     .catch(err => {
         console.log(err)    
     })
+};
+
+// SQL queries
+function viewDepartments() {
+    db.query('SELECT * FROM department', function (err, res) {
+        if (err) throw err;
+        console.table(res);
+        selectPrompt();
+    });
+};
+
+function viewRoles() {
+    console.log('ALSO HERE!')
+};
+
+function viewEmployees() {
+    console.log('ALSO HERE!')
+};
+
+function addDepartment() {
+    console.log('ALSO HERE!')
+};
+
+function addRole() {
+    console.log('ALSO HERE!')
+};
+
+function addEmployee() {
+    console.log('ALSO HERE!')
+};
+
+function addEmployeeRole() {
+    console.log('ALSO HERE!')
+};
+
+function exit() {
+    displayExitText();
 };
 
 // use input to run selected task function
