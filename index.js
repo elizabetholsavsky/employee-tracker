@@ -19,17 +19,17 @@ const db = mysql.createConnection(
 
 // handle errors or start application
 db.connect(function (err) {
-    // if (err) throw err;
+    if (err) throw err;
     init();
 });
 
-// start application, show title and task prompt
-function init() {
-    displayTitleText();
+// ask prompt, send response to task functions, catch errors
+function selectPrompt() {
     inquirer
     .prompt(tasksPrompt)
     .then((response => {
         task(response);
+        selectPrompt();
     }))
     .catch(err => {
         console.log(err)    
@@ -62,6 +62,12 @@ function task(response) {
             break;
         case "Exit":
             exit();
-            break;
+            process.exit(0);
     }
+};
+
+// start application, show title and task prompt
+function init() {
+    displayTitleText();
+    selectPrompt();
 };
