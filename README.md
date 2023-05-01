@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/116515976/235394469-14040ce4-821e-49f3
 * [Questions](#questions)
 
 ## Installation
-* Check if you have Node.js installed by typing "node -v" in your command line. If node is not installed, visit the [Node.js website](https://nodejs.org/en) to install. 
+* Check if you have Node.js installed by typing "node -v" in your command line. If node is not installed, visit the [Node.js](https://nodejs.org/en) website to install. 
 * Next, clone this project repository to your computer. 
 * Use the command "npm install" to install dependecies. 
 * Create a file in the root directory titled ".env" and type "PASSWORD='[YOUR PASSWORD HERE]'"
