@@ -1,7 +1,7 @@
 # Employee Tracker
 
 ## Description
-Manage company employee data using this Command line Content Management System (CMS) built using Node.js, Inquirer, and MySQL. Options include view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role.
+Manage company employee data using this Command line Content Management System (CMS) built using Node.js, Inquirer, and MySQL. Options include: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat)](https://nodejs.org/en) [![MySQL Badge](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=flat)](https://www.npmjs.com/package/mysql2)
 
