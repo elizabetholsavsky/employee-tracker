@@ -8,7 +8,7 @@ db.connect(function (err) {
     init();
 });
 
-// start application, show title and task prompt
+// start application, show title special-text and present task list prompt (using 'selectTask')
 function init() {
     displayTitleText();
     selectTask();
