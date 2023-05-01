@@ -13,6 +13,7 @@ https://user-images.githubusercontent.com/116515976/235394469-14040ce4-821e-49f3
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
+* [Contributing](#Contributing)
 * [Questions](#questions)
 
 ## Installation
@@ -31,6 +32,9 @@ https://user-images.githubusercontent.com/116515976/235394469-14040ce4-821e-49f3
 
 ## License
 [MIT License](https://opensource.org/licenses/MIT)
+
+## Contributing
+This project was created as a challenge assignment for the Austin UT Full Stack Boot Camp. Table structures provided in 'assets' folder was provided by Austin UT Boot Camps. Please contact me with any ideas, questions, or requests.
 
 ## Questions
 
