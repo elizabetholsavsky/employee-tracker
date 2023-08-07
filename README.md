@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/116515976/235394469-14040ce4-821e-49f3
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#Contributing)
-* [Questions](#questions)
+* [Contact](#contact)
 
 ## Installation
 * Check if you have Node.js installed by typing "node -v" in your command line. If node is not installed, visit the [Node.js](https://nodejs.org/en) website to install. 
@@ -36,10 +36,11 @@ https://user-images.githubusercontent.com/116515976/235394469-14040ce4-821e-49f3
 ## Contributing
 This project was created as a challenge assignment for the Austin UT Full Stack Boot Camp. Table structures provided in 'assets' folder was provided by Austin UT Boot Camps. Please contact me with any ideas, questions, or requests.
 
-## Questions
+## Contact
+* Email elizabetholsavsky@gmail.com
+* LinkedIn [https://www.linkedin.com/in/elizabetholsavsky/](https://www.linkedin.com/in/elizabetholsavsky/)
+* Portfolio [https://elizabetholsavsky.com/](https://elizabetholsavsky.com/)
+* Hashnode [https://elizabetholsavsky.hashnode.dev/](https://elizabetholsavsky.hashnode.dev/)
+* Twitter [@elizavsky](https://twitter.com/home)
 
-Ask questions by contacting me at:
 
-Github [elizabetholsavsky](https://github.com/elizabetholsavsky)
-
-Email elizabetholsavsky@gmail.com
