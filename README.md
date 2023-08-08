@@ -1,9 +1,14 @@
-# Employee Tracker
+<div align="center">
+  
+  # Employee Tracker
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+  [![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat)](https://nodejs.org/en) 
+  [![MySQL Badge](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=flat)](https://www.npmjs.com/package/mysql2)
+
+</div>
 
 ## Description
 Manage employee data using this command line Content Management System (CMS) built with Node.js, Inquirer, and MySQL. Options include: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat)](https://nodejs.org/en) [![MySQL Badge](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=flat)](https://www.npmjs.com/package/mysql2)
 
 Watch a [video](https://drive.google.com/file/d/19lW-0GmEP5WKxZGGcbJgH0o3F3YHdwfB/view?usp=sharing) demonstration of the basic functionaity using mock data:
 
